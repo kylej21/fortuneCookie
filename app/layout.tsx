@@ -26,6 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="dl2jl3JC-CTWrdkTfKMKJ-MIotHRHUn9kBo96aus5ZU" />
+      </head>
       <body className={inter.variable} >
       <Theme appearance="light" accentColor="teal" scaling="110%" >
           <NavBar/>
