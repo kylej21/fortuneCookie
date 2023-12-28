@@ -1,0 +1,42 @@
+{
+  "name": "fullstackdep",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
+    "@prisma/client": "^5.3.1",
+    "@radix-ui/themes": "^2.0.2",
+    "@types/node": "20.10.3",
+    "@types/react": "18.2.42",
+    "@types/react-dom": "18.2.17",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.0",
+    "autoprefixer": "10.4.16",
+    "axios": "^1.5.0",
+    "classnames": "^2.3.2",
+    "codemirror": "^5.65.16",
+    "easymde": "^2.18.0",
+    "eslint": "8.55.0",
+    "next": "14.0.3",
+    "postcss": "8.4.32",
+    "prisma": "^5.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.46.1",
+    "react-icons": "^4.12.0",
+    "react-simplemde-editor": "^5.2.0",
+    "typescript": "5.3.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "eslint-config-next": "^14.0.3",
+    "tailwindcss": "^3.4.0"
+  }
+}
