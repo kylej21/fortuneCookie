@@ -9,9 +9,16 @@ import { createSchema } from "@/app/createSchema";
 import { useRouter } from "next/navigation";
 import Image from "next/image"
 import fortuneCookie from "./public/fortuneCookie.png"
+
 interface IssueForm{
     title: string;
     description: string;
+}
+
+const fetchData = async () => {
+  const response = await fetch('./api/issues/storeJSONData')
+  const data = await response.json();
+  console.log(data);
 }
 
 const Home = () => {
@@ -36,7 +43,7 @@ const [error,setError]= useState('');
                   fortuneText= data.data.slip["advice"];
                   document.getElementById('FortuneOut')!.textContent = fortuneText;
                 } catch (error) {
-                    setError('Error fetching data');
+                   console.log(error);
                 }
               }}>
             <Image 
@@ -49,6 +56,8 @@ const [error,setError]= useState('');
           <div className="flex border-black pt-40 pb-32">
               <p id="FortuneOut">Test text</p>
           </div>
+          <button onClick={fetchData}>Fetch</button>
+
         </div>
     </div>
     

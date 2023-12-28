@@ -10,6 +10,7 @@ const NavBar = () => {
     console.log(currentPath)
     const links=[
         {label: 'Home', href:"/"},
+        {label: 'Analysis', href:"/analysis"}
     ]
   return (
     <nav className="flex space-x-6 border-b border-black px-5 h-14 items-center bg-gradient-to-b from-amber-100 to-orange-200">
