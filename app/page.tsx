@@ -54,10 +54,8 @@ const [error,setError]= useState('');
               />
           </Button>
           <div className="flex border-black pt-40 pb-32">
-              <p id="FortuneOut">Test text</p>
+              <p id="FortuneOut"></p>
           </div>
-          <button onClick={fetchData}>Fetch</button>
-
         </div>
     </div>
     
