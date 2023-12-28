@@ -31,6 +31,8 @@ export default function RootLayout({
           <NavBar/>
           <main className="p-5 bg-gradient-to-b from-orange-200 to-amber-100">
             {children}
+            <SpeedInsights />
+            <Analytics/>
           </main>
         </Theme>
         </body>
